@@ -40,7 +40,7 @@ h2 {
   justify-content: center;
   align-items: center;
   border: 2px solid $blue;
-  background-color: #eee6d8;
+  background-image: linear-gradient(to right bottom, rgba(191, 63, 63, 0.3), rgba(173, 59, 99, 0.3), rgba(140, 68, 122, 0.3), rgba(99, 77, 128, 0.3), rgba(64, 79, 117, 0.3), rgba(39, 89, 122, 0.3), rgba(10, 98, 120, 0.3), rgba(13, 105, 111, 0.3), rgba(28, 127, 106, 0.3), rgba(83, 146, 86, 0.3), rgba(146, 159, 63, 0.3), rgba(217, 162, 61, 0.3));
   .header {
     background: $blue;
     display: flex;
@@ -75,10 +75,7 @@ h2 {
         margin: unset;
       }
     }
-    
-
   }
-
 }
 
 
