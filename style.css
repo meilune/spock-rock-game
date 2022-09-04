@@ -121,6 +121,8 @@ h2 {
 
 .computer-container .fa-regular {
   color: #314A59;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
 }
 
 .computer-container .fa-regular:hover {
@@ -128,44 +130,33 @@ h2 {
 }
 
 /* Media Query: Large Smartphone (Vertical) */
-@media screen and (max-width: 600px) {
-  .game-container {
-    height: 580px;
+@media screen and (max-width: 768px) {
+  .game-container .header {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
   }
-  h1 {
+  .game-container .header h1 {
     font-size: 24px;
+    text-align: center;
   }
-  .player-container {
-    margin: 50px 0 25px 25px;
+  .game-container .footer .result-container .result-text {
+    font-size: 28px;
   }
-  .far {
-    margin-right: 20px;
+  .player-container, .computer-container {
+    margin: 30px;
+    text-align: center;
   }
-  .reset-icon {
-    margin-top: 25px;
-    margin-left: 25px;
+  .fa-regular {
+    margin: 30px;
   }
 }
 
 /* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 376px) {
-  .game-container {
-    height: 550px;
-  }
-  h1 {
-    font-size: 22px;
-  }
-  .player-container {
-    margin: 43px 0 25px 20px;
-  }
-  .far {
-    font-size: 43px;
-  }
-  .reset-icon {
-    margin-top: 15px;
-  }
-  .result-container {
-    margin: 0 20px;
+@media screen and (max-width: 410px) {
+  .fa-regular {
+    font-size: 50px;
+    margin: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */

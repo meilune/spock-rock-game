@@ -78,8 +78,6 @@ h2 {
   }
 }
 
-
-
 .player-container {
   margin: 50px;
   .fa-regular {
@@ -90,13 +88,11 @@ h2 {
   }
 }
 
-
-
-
 .computer-container {
   margin: 50px;
   .fa-regular {
     color: $blue;
+    transform: scaleX(-1);
     &:hover {
       color: $yellow;
     }
@@ -105,53 +101,41 @@ h2 {
 
 
 /* Media Query: Large Smartphone (Vertical) */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 768px) {
   .game-container {
-
-    height: 580px;
+    .header {
+      box-sizing: border-box;
+      width: 100%;
+      h1 {
+        font-size: 24px;
+        text-align: center;
+      }
+    }
+    .footer {
+      .result-container {
+        .result-text {
+          font-size: 28px;
+        }
+      }
+    }
   }
 
-  h1 {
-    font-size: 24px;
+  .player-container, .computer-container {
+    margin: 30px;
+    text-align: center;
   }
 
-  .player-container {
-    margin: 50px 0 25px 25px;
+  .fa-regular {
+    margin: 30px;
   }
 
-  .far {
-    margin-right: 20px;
-  }
 
-  .reset-icon {
-    margin-top: 25px;
-    margin-left: 25px;
-  }
 }
 
 /* Media Query: iPhone (Vertical) */
-@media screen and (max-width: 376px) {
-  .game-container {
-    height: 550px;
-  }
-
-  h1 {
-    font-size: 22px;
-  }
-
-  .player-container {
-    margin: 43px 0 25px 20px;
-  }
-
-  .far {
-    font-size: 43px;
-  }
-
-  .reset-icon {
-    margin-top: 15px;
-  }
-
-  .result-container {
-    margin: 0 20px;
+@media screen and (max-width: 410px) {
+  .fa-regular {
+    font-size: 50px;
+    margin: 20px;
   }
 }
