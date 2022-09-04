@@ -21,7 +21,36 @@ body {
           align-items: center;
 }
 
-.header {
+.fa-regular {
+  font-size: 60px;
+  margin: 0 30px;
+  cursor: pointer;
+  User-select: none;
+}
+
+h2 {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.game-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 2px solid #314A59;
+}
+
+.game-container .header {
   background: #314A59;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -32,61 +61,68 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
+  padding: 1rem 3rem;
 }
 
-h1 {
-  color: #fff;
+.game-container .header h1 {
   font-size: 40px;
   color: #D9A23D;
   letter-spacing: 2px;
 }
 
-img {
-  width: 100px;
-  margin: 20px;
+.game-container .footer {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  padding: 2rem 1rem;
+  background-color: #314A59;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.game-container .footer .fa-solid {
+  font-size: 34px;
+  color: #D9A23D;
+  cursor: pointer;
+  text-align: left;
+}
+
+.game-container .footer .result-container .result-text {
+  font-size: 40px;
+  color: #D9A23D;
+  margin: unset;
 }
 
 .player-container {
   margin: 50px;
 }
 
-h2 {
-  margin-bottom: 20px;
+.player-container .fa-regular {
+  color: #BF3F3F;
 }
 
-.far {
-  font-size: 50px;
-  margin-right: 40px;
-  User-select: none;
+.player-container .fa-regular:hover {
+  color: #D9A23D;
 }
 
 .computer-container {
   margin: 50px;
 }
 
-.reset-icon {
-  font-size: 30px;
-  cursor: pointer;
-  margin-left: 50px;
+.computer-container .fa-regular {
+  color: #314A59;
 }
 
-.result-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.result-text {
-  font-size: 40px;
-  margin: unset;
-  margin-top: 20px;
+.computer-container .fa-regular:hover {
+  color: #D9A23D;
 }
 
 /* Media Query: Large Smartphone (Vertical) */

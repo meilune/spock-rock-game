@@ -22,65 +22,89 @@ body {
   align-items: center;
 }
 
-
-
-.header {
-  background: $blue;
-
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-}
-
-h1 {
-  color:$white;
-  font-size: 40px;
-  color: $yellow;
-  letter-spacing: 2px;;
-}
-
-img {
-  width: 100px;
-  margin: 20px;
-}
-
-.player-container {
-  margin: 50px;
-}
-
-h2 {
-  margin-bottom: 20px;
-}
-
-.far {
-  font-size: 50px;
-  margin-right: 40px;
+.fa-regular {
+  font-size: 60px;
+  margin: 0 30px;
+  cursor: pointer;
   User-select: none;
 }
 
-.computer-container {
-  margin: 50px;
+h2 {
+  margin-left: 30px;
+  margin-bottom: 20px;
 }
 
-
-.reset-icon {
-  font-size: 30px;
-  cursor: pointer;
-  margin-left: 50px;
-}
-
-.result-container {
+.game-container {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
+  border: 2px solid $blue;
+  .header {
+    background: $blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 3rem;
+    h1 {
+      font-size: 40px;
+      color: $yellow;
+      letter-spacing: 2px;;
+    }
+  }
+  .footer {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 2rem 1rem;
+    background-color: $blue;
+    box-sizing: border-box;
+    .fa-solid {
+      font-size: 34px;
+      color: $yellow;
+      cursor: pointer;
+      text-align: left;
+    }    
+    .result-container {
+      .result-text {
+        font-size: 40px;
+        color: $yellow;
+        margin: unset;
+      }
+    }
+    
+
+  }
+
 }
 
-.result-text {
-  font-size: 40px;
-  margin: unset;
-  margin-top: 20px;
+
+
+.player-container {
+  margin: 50px;
+  .fa-regular {
+    color: $red;
+    &:hover {
+      color: $yellow;
+    }
+  }
 }
+
+
+
+
+.computer-container {
+  margin: 50px;
+  .fa-regular {
+    color: $blue;
+    &:hover {
+      color: $yellow;
+    }
+  }
+}
+
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 600px) {
