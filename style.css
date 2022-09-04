@@ -48,6 +48,7 @@ h2 {
       -ms-flex-align: center;
           align-items: center;
   border: 2px solid #314A59;
+  background-color: #eee6d8;
 }
 
 .game-container .header {
