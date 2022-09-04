@@ -50,6 +50,8 @@ h2 {
   border: 2px solid #314A59;
   background-image: -webkit-gradient(linear, left top, right bottom, from(rgba(191, 63, 63, 0.3)), color-stop(rgba(173, 59, 99, 0.3)), color-stop(rgba(140, 68, 122, 0.3)), color-stop(rgba(99, 77, 128, 0.3)), color-stop(rgba(64, 79, 117, 0.3)), color-stop(rgba(39, 89, 122, 0.3)), color-stop(rgba(10, 98, 120, 0.3)), color-stop(rgba(13, 105, 111, 0.3)), color-stop(rgba(28, 127, 106, 0.3)), color-stop(rgba(83, 146, 86, 0.3)), color-stop(rgba(146, 159, 63, 0.3)), to(rgba(217, 162, 61, 0.3)));
   background-image: linear-gradient(to right bottom, rgba(191, 63, 63, 0.3), rgba(173, 59, 99, 0.3), rgba(140, 68, 122, 0.3), rgba(99, 77, 128, 0.3), rgba(64, 79, 117, 0.3), rgba(39, 89, 122, 0.3), rgba(10, 98, 120, 0.3), rgba(13, 105, 111, 0.3), rgba(28, 127, 106, 0.3), rgba(83, 146, 86, 0.3), rgba(146, 159, 63, 0.3), rgba(217, 162, 61, 0.3));
+  -webkit-box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+          box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
 }
 
 .game-container .header {
@@ -97,6 +99,10 @@ h2 {
   text-align: left;
 }
 
+.game-container .footer .fa-solid:hover {
+  color: #BF3F3F;
+}
+
 .game-container .footer .result-container .result-text {
   font-size: 40px;
   color: #D9A23D;
@@ -105,6 +111,10 @@ h2 {
 
 .player-container {
   margin: 50px;
+}
+
+.player-container .choice {
+  color: #BF3F3F;
 }
 
 .player-container .fa-regular {
@@ -117,6 +127,10 @@ h2 {
 
 .computer-container {
   margin: 50px;
+}
+
+.computer-container .choice {
+  color: #314A59;
 }
 
 .computer-container .fa-regular {

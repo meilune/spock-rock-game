@@ -41,6 +41,7 @@ h2 {
   align-items: center;
   border: 2px solid $blue;
   background-image: linear-gradient(to right bottom, rgba(191, 63, 63, 0.3), rgba(173, 59, 99, 0.3), rgba(140, 68, 122, 0.3), rgba(99, 77, 128, 0.3), rgba(64, 79, 117, 0.3), rgba(39, 89, 122, 0.3), rgba(10, 98, 120, 0.3), rgba(13, 105, 111, 0.3), rgba(28, 127, 106, 0.3), rgba(83, 146, 86, 0.3), rgba(146, 159, 63, 0.3), rgba(217, 162, 61, 0.3));
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
   .header {
     background: $blue;
     display: flex;
@@ -67,6 +68,9 @@ h2 {
       color: $yellow;
       cursor: pointer;
       text-align: left;
+      &:hover {
+        color: $red;
+      }
     }    
     .result-container {
       .result-text {
@@ -80,6 +84,9 @@ h2 {
 
 .player-container {
   margin: 50px;
+  .choice {
+    color: $red;
+  }
   .fa-regular {
     color: $red;
     &:hover {
@@ -90,6 +97,9 @@ h2 {
 
 .computer-container {
   margin: 50px;
+  .choice {
+    color: $blue;
+  }
   .fa-regular {
     color: $blue;
     transform: scaleX(-1);
