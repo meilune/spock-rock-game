@@ -106,6 +106,9 @@ h2 {
   }
 }
 
+canvas {
+  position: absolute;
+}
 
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 768px) {

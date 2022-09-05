@@ -139,6 +139,10 @@ h2 {
           transform: scaleX(-1);
 }
 
+canvas {
+  position: absolute;
+}
+
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 768px) {
   .game-container .header {

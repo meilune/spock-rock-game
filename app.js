@@ -29,6 +29,7 @@ function computerSelect() {
 //Function of getting value from player selection
 let item = "";
 function select(hand) {
+  stopConfetti();
   item = hand;
   playerChoiceEl.textContent = choices[item].name;
   computerSelect();
@@ -45,6 +46,7 @@ function compareChoice() {
     resultText.textContent = "You Won!";
     playerScore++;
     playerScoreEl.textContent = playerScore;
+    startConfetti();
   }  else {
     resultText.textContent = "It's A Tie!";
   }
