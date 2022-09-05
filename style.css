@@ -143,6 +143,10 @@ canvas {
   position: absolute;
 }
 
+.selected {
+  color: #fff !important;
+}
+
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 768px) {
   .game-container .header {

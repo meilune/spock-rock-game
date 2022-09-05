@@ -110,6 +110,10 @@ canvas {
   position: absolute;
 }
 
+.selected {
+  color: $white !important;
+}
+
 /* Media Query: Large Smartphone (Vertical) */
 @media screen and (max-width: 768px) {
   .game-container {
