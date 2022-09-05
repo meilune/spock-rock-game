@@ -2,6 +2,10 @@
 
 A project to play a game.
 
+Try it out at https://meilune.github.io/spock-rock-game/
+
+So proud of this one as I did it on my own, without following the tutorial at all and the end code looks and works completely different from the teacher's. But it still does what it's supposed to do, entertainers the user.
+
 Hand icons from Freepik (with licence) adapted for the game.
 
 This project is created based on Udemy's JavaScript Web Projects: 20 Projects to Build Your Portfolio, ZTM Academy. It's my way of building up my JavaScript skills. 
