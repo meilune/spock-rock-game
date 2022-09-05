@@ -25,7 +25,6 @@ body {
 .fa-regular {
   font-size: 60px;
   margin: 0 30px;
-  cursor: pointer;
   User-select: none;
 }
 
@@ -89,6 +88,7 @@ h2 {
   }
   .fa-regular {
     color: $red;
+    cursor: pointer;
     &:hover {
       color: $yellow;
     }
