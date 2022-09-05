@@ -103,9 +103,6 @@ h2 {
   .fa-regular {
     color: $blue;
     transform: scaleX(-1);
-    &:hover {
-      color: $yellow;
-    }
   }
 }
 

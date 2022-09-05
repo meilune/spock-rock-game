@@ -4,19 +4,10 @@ const computerScoreEl = document.getElementById('computer-score');
 const computerChoiceEl = document.getElementById('computer-choice');
 const resultText = document.getElementById('result-text');
 
-const playerRock = document.getElementById('player-rock');
-const playerPaper = document.getElementById('player-paper');
-const playerScissors = document.getElementById('player-scissors');
-const playerLizard = document.getElementById('player-lizard');
-const playerSpock = document.getElementById('player-spock');
+const resetGame = document.getElementById("reset-game");
 
-const computerRock = document.getElementById('computer-rock');
-const computerPaper = document.getElementById('computer-paper');
-const computerScissors = document.getElementById('computer-scissors');
-const computerLizard = document.getElementById('computer-lizard');
-const computerSpock = document.getElementById('computer-spock');
-
-const allGameIcons = document.querySelectorAll(".fa-regular");
+let playerScore = 0;
+let computerScore = 0;
 
 const choices = {
   rock: { name: 'Rock', defeats: ['scissors', 'lizard'] },
@@ -25,4 +16,45 @@ const choices = {
   lizard: { name: 'Lizard', defeats: ['paper', 'spock'] },
   spock: { name: 'Spock', defeats: ['scissors', 'rock'] },
 };
+
+//Function of computer selection calculated
+let computerItem = "";
+function computerSelect() {
+  let number = Math.floor(Math.random() * 5);
+  computerItem = Object.keys(choices)[number];
+  computerChoiceEl.textContent = choices[computerItem].name;
+  return computerItem;
+}
+
+//Function of getting value from player selection
+let item = "";
+function select(hand) {
+  item = hand;
+  playerChoiceEl.textContent = choices[item].name;
+  computerSelect();
+  compareChoice();
+}
+
+//Function to compare choices
+function compareChoice() {
+  if (item === choices[computerItem].defeats[0] || item === choices[computerItem].defeats[0]) {
+    resultText.textContent = "You lost.";
+    computerScore++;
+    computerScoreEl.textContent = computerScore;
+  } else if (computerItem === choices[item].defeats[0] || computerItem === choices[item].defeats[0]) {
+    resultText.textContent = "You Won!";
+    playerScore++;
+    playerScoreEl.textContent = playerScore;
+  }  else {
+    resultText.textContent = "It's A Tie!";
+  }
+} 
+
+//Function to clean the board
+function refreshGame() {
+  playerScore = 0;
+  computerScore = 0;
+  location.reload();
+}
+resetGame.addEventListener('click', refreshGame);
 
